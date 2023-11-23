@@ -1,0 +1,11 @@
+navbar
+carousel
+.container>> 
+	h1, 
+	.row>>col-lg-2(6)>>img>p ---two rows
+	
+section-2
+	.container>>div>>2div(d-flex justify-content-between
+				
+	.row>> col-lg-4(3)
+

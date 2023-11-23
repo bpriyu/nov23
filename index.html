@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Uno</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#"><img src="./assets/images/logo.png" alt=""></a>
+          <div class="dropdown">
+            <a href="" class="d-none d-lg-block dropdown-toggle  text-decoration-none text-dark fw-bold ms-5 mt-4" data-bs-toggle="dropdown" id="demo" onclick="document.getElementById('demo').style.textDecorationLine='underline'">CATEGORIES</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item">
+              <div class="d-flex">
+                <ul class="">
+                  <li><a class="dropdown-item fw-bold li-first" href="#">HOME DECOR ></a></li>
+                  <li><a class="dropdown-item" href="#">Bedding</a></li>
+                  <li><a class="dropdown-item" href="#">Outdoor Pillows</a></li>
+                  <li><a class="dropdown-item" href="#">Outdoor chair pads,cushions and pouf</a></li>
+                  <li><a class="dropdown-item" href="#">Indoor Decorative Pillows</a></li>
+                  <li><a class="dropdown-item" href="#">Bath</a></li>
+                  <li><a class="dropdown-item" href="#">Window Dressing</a></li>
+                  <li><a class="dropdown-item" href="#">Kitchen/Table</a></li>
+                  <li><a class="dropdown-item" href="#">Floor Coverings</a></li>
+                  <li><a class="dropdown-item" href="#">Decorative Accessories</a></li>
+                  <li><a class="dropdown-item li-last fw-bold" href="#">See All...</a></li>
+                </ul>
+                <ul class="">
+                  <li><a class="dropdown-item fw-bold li-first" href="#">PETS ></a></li>
+                  <li><a class="dropdown-item" href="#">Collars</a></li>
+                  <li><a class="dropdown-item" href="#">Leashes</a></li>
+                  <li><a class="dropdown-item" href="#">Pet Beds</a></li>
+                  <li><a class="dropdown-item" href="#">Bandanas</a></li>
+                  <li><a class="dropdown-item" href="#">Pet Apparels</a></li>
+                  <li><a class="dropdown-item" href="#">Bowl and Accessories</a></li>
+                  <li><a class="dropdown-item li-last fw-bold" href="#">See All...</a></li>
+                </ul>
+                <ul class="">
+                  <li><a class="dropdown-item fw-bold li-first" href="#">FURNITURE ></a></li>
+                  <li><a class="dropdown-item li-last fw-bold" href="#">See All...</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="input-group mb-3 mx-auto mb-2 mb-lg-0 headerSearchbar">
+                <input type="text" class="form-control searchinput" placeholder="Search Here..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary bg-dark text-white serachBtn" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+              </div>
+
+            <form class="d-flex" role="search">
+              <a href="" class="text-decoration-none text-dark fw-bold me-5">MY ACCOUNT</a>
+              <a href="" class="text-decoration-none text-dark fw-bold">CART </a><i class="bi bi-clipboard mx-2"></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide slider1">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span>.</span></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/banner-image.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/banner-image.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/banner-image.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon  fw-bold iconext" aria-hidden="true"> < </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon fw-bold iconprev" aria-hidden="true">></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- sections -->
+      <div class="container mt-5">
+        <h4 class="py-1 fw-bold mt-2">Shop by Category</h4>
+        <div class="row">
+          <div class="col-lg-2 col-md-4 col-12 mx-auto my-1  p-0 card1">
+            <div class="card">
+              <img src="./assets/images/Bedding.png" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">BEDDING</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto  p-0 card2">
+            <div class="card">
+              <a href="prod.html"><img src="./assets/images/Outdoor-Pillows.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">OUTDOOR PILLOWS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card3">
+            <div class="card">
+              <img src="./assets/images/Outdoor-chair.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">OUTDOOR CHAIR PADS, CUSHIONS AND POUFS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card4">
+            <div class="card">
+              <img src="./assets/images/Indoor-Decorative.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">INDOOR DECORATIVE PILLOWS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card5">
+            <div class="card">
+              <img src="./assets/images/Indoor-chair.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">INDOOR CHAIR PADS, CUSHIONS AND POUFS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card6">
+            <div class="card">
+              <img src="./assets/images/Bath.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">BATH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-3">
+          <div class="col-lg-2 col-md-4 col-12 mx-auto my-1  p-0 card1">
+            <div class="card">
+              <img src="./assets/images/Window-Dressings.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">WINDOW DRESSING</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto  p-0 card2">
+            <div class="card">
+              <img src="./assets/images/Kitchen-Table.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">KITCHEN TABLE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card3">
+            <div class="card">
+              <img src="./assets/images/Floor-Coverings.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">FLOOR COVERINGS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card4">
+            <div class="card">
+              <img src="./assets/images/Decorative-Accessories.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">DECORATIVE ACCESSORIES</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card5">
+            <div class="card">
+              <img src="./assets/images/PET-Collars.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">PET COLLARS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-12 my-1 mx-auto p-0 card6">
+            <div class="card">
+              <img src="./assets/images/Furniture.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body1"> 
+                <p class="card-text text-center fw-bold">FURNITURE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h4 class="fw-bold py-1">Heading 2</h4>
+            </div>
+            <div>
+                <h4 class="fw-bold py-1">Explore All <i class="bi bi-arrow-right"></i></h4>
+            </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-4 col-12">
+            <img src="./assets/images/Heading2_img1.jpg" alt="">
+          </div>
+          <div class="col-md-4 col-12 my-2 my-lg-0">
+            <img src="./assets/images/Heading2_img2.jpg" alt="">
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="./assets/images/Heading2_img3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+            <div>
+                <h4 class="fw-bold py-1">Heading 3</h4>
+            </div>
+            <div>
+                <h4 class="fw-bold py-1">Explore All <i class="bi bi-arrow-right"></i></h4>
+            </div>
+        </div>
+        <div class="row d-lg-flex  row_heading3  mt-3">
+          <div class="col-lg-2 col-md-6 col-12 heading3 mx-auto mt-1  p-0">
+            <div class="card">
+              <img src="./assets/images/Heading3_img1.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body2">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <span class="fw-bold">$38.22</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-12 my-2 my-lg-0 heading3 mx-auto my-1  p-0">
+            <div class="card">
+              <img src="./assets/images/Heading3_img2.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body2">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <span class="fw-bold">$38.22</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-12 heading3 mx-auto my-1  p-0">
+            <div class="card">
+              <img src="./assets/images/Heading3_img3.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body2">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <span class="fw-bold">$38.22</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-12 mt-1 mt-lg-0 heading3 mx-auto my-1  p-0">
+            <div class="card">
+              <img src="./assets/images/Heading3_img4.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body2">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <span class="fw-bold">$38.22</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-12 mt-1 mt-lg-0 heading3 mx-auto mx-md-3 mx-lg-auto my-1  p-0">
+            <div class="card">
+              <img src="./assets/images/Heading3_img4.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body2">
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <span class="fw-bold">$38.22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center align-items-center mt-5 py-5 bannerads">
+        <div class="fw-bold">
+            BANNER ADS
+        </div>
+      </div>
+      <div class="container mt-4">
+        <h4 class="fw-bold py-1">Sponserd Content</h4>
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="card" style="border:none;">
+              <img src="./assets/images/Window-Dressings1.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body3 bg-dark text-white">
+                <p class="card-text">Window Dressing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="card" style="border:none;">
+              <img src="./assets/images/Bathroom-Accessories.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body3 bg-dark text-white">
+                <p class="card-text">Bathroom Accessories</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="card" style="border:none;">
+              <img src="./assets/images/Decorative-Accessories1.jpg" class="card-img-top" alt="...">
+              <div class="card-body card-body3 bg-dark text-white">
+                <p class="card-text">Decorative Accessories</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-md-flex justify-content-around  text-center align-items-center py-2 footer mt-5">
+        <div class="mt-3 mt-md-0">&#169;2023 by UnoPosto, All Rights Reserved</div>
+        <div class="mt-4 mt-md-0">
+         <a href="https://www.facebook.com/login/" class="me-2"><img src="./assets/images/facebook.png" alt=""></a>
+         <a href="https://twitter.com/i/flow/login" class="me-2"><img src="./assets/images/twitter.png" alt=""></a>
+         <a href="https://www.linkedin.com/login" class="me-2"><img src="./assets/images/linkedin.png" alt=""></a>
+         <a href="https://www.tumblr.com/" class="me-2"><img src="./assets/images/tumblr.png" alt=""></a>
+        </div>
+      </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
