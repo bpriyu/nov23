@@ -1,0 +1,229 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.headerSearchbar{
+    width: 40%;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.slider1{
+    width: 90%;
+    margin: 0 auto;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -40%;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: transparent;
+    border: 2px solid purple;
+    color: #000;
+    width: 0px;
+    height: 0;
+    border-radius: 50%;
+    padding: 5px;
+}
+.searchinput::placeholder{
+    padding-left: 40%;
+}
+.logo img{
+    width: 150px;
+}
+.cat1,.cat2,.cat3,.cat4,.cat5,.cat6{
+    border: 1px solid rgb(212, 208, 208);
+}
+
+.bedding_p{
+    background-color:#f1f1f1;
+    padding: 20px 0;
+}
+.btn1{
+    background-color:#f1f1f1;
+    width: 100%;
+    border: none;
+    height: 60px;
+}
+.main p{
+    font-size: 12px;
+}
+.heading3{ 
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    margin: 0 5px;
+    width: 95%;
+}
+.footer{
+    background-color: #d2d3d9;
+}
+.footer img{
+    width: 40px;
+}
+.card{
+    padding: 0px;
+    height: 100%;
+   
+}
+.card-body1{
+    background-color: #d2d3d9;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+card-body2{
+   
+}
+.card-body1 p{
+    font-size: 12px;
+    padding: 10px;
+}
+.bannerads{
+    background-color: #d2d3d9;
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+    width: 92%;
+}
+.dropdown-menu[data-bs-popper]{
+    border-radius: 0;
+    border: none;
+}
+.li-first,.li-last,.sellernm_span{
+    color: purple;
+}
+.addcartBtn{
+    background-color: #692D96;
+    border: none;
+    width: 300px;
+    padding: 10px 0;
+}
+.showmore_link{
+    color: #692D96;
+}
+.table>:not(caption)>*td{
+    background-color: plum;
+}
+
+.td_bg{
+    background-color: plum;
+}
+
+.iconext{
+    font-size: 34px;
+    color: #000;
+    position: absolute;
+    left: -0%;
+}
+.iconprev{
+    font-size: 34px;
+    color: #000;
+    position: absolute;
+    right: 0%;
+}
+.iconext,.iconprev{
+    background: none;
+}
+.card-img-top{
+    height: 200px;
+    padding: 20px;
+}
+
+@media(min-width:768px){
+    .heading3{
+        width: 45%;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6{
+        width: 48%;
+    }
+    .carousel-indicators{
+        position: absolute;
+        bottom: -25%;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: transparent;
+        border: 2px solid purple;
+        color: #000;
+        width: 0px;
+        height: 0;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .iconext{
+        position: absolute;
+        left: -25%;
+    }
+    .iconprev{
+        position: absolute;
+        right: -25%;
+    }
+    .row_heading3{
+       display: flex;
+       justify-content: start !important; 
+    }
+}
+@media(min-width:992px){
+    .heading3{
+        width: 23%;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6{
+        width:15%;
+    }
+    .heading3{
+        width: 18%;
+    }
+    .navbar{
+        width: 92%;
+        margin: 0 auto;
+    }
+    .carousel-indicators{
+        position: absolute;
+        bottom: -20%;
+    }
+    .carousel-indicators [data-bs-target]{
+        background-color: transparent;
+        border: 2px solid purple;
+        color: #000;
+        width: 0px;
+        height: 0;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .left{
+        border-right: 1px solid gray;
+    }
+    
+
+}
+@media(min-width:1440px){
+    .cat1,.cat2,.cat3,.cat4,.cat5,.cat6{
+        border: 1px solid rgb(212, 208, 208);
+        height: 200px;
+        width: 167px;
+    }
+    .btn1{
+        background-color:#f1f1f1;
+        width: 165px;
+        border: none;
+        height: 72px;
+    }
+    
+}
+@media(min-width:2560px){
+    .carousel-indicators{
+        position: absolute;
+        bottom: -10%;
+    }
+}
